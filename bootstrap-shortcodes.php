@@ -137,10 +137,20 @@ class BoostrapShortcodes {
     *-------------------------------------------------------------------------------------*/
   function bs_span( $atts, $content = null ) {
     extract(shortcode_atts(array(
-      "size" => 'size'
+      "size" => '12',
+      "offset" => '',
+      "class" => ''
     ), $atts));
 
-    return '<div class="span' . $size . '">' . do_shortcode( $content ) . '</div>';
+    $classes = 'span' . $size;
+
+    if($offset != '')
+      $classes .= ' offset' . $offset;
+
+    if($class != '')
+      $classes .= ' ' . $class;
+
+    return '<div class="' . $classes . '">' . do_shortcode( $content ) . '</div>';
 
   }
 

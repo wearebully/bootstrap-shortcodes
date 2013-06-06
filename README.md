@@ -55,10 +55,10 @@ You use the shortcodes just like you would with any other shortcode, with the ex
 
 #### Grid
 	[row]
-	  [span size="6"]
+	  [span size="4" offset="2" class="custom class"]
 	    …
 	  [/span]
-	  [span size="6"]
+	  [span size="4" offset="2" class="custom class"]
 	    …
 	  [/span]
 	[/row]
