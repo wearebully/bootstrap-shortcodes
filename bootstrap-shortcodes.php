@@ -170,7 +170,7 @@ class BoostrapShortcodes {
       "class" => ''
     ), $atts));
     
-    return '<div class="row-fluid' . $class . '">' . do_shortcode( $content ) . '</div>';
+    return '<div class="row-fluid ' . $class . '">' . do_shortcode( $content ) . '</div>';
 
   }
   
