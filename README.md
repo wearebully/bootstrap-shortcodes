@@ -54,7 +54,7 @@ You use the shortcodes just like you would with any other shortcode, with the ex
 	[icon_white type="arrow"]
 
 #### Grid
-	[row]
+	[row class="custom class"]
 	  [span size="4" offset="2" class="custom class"]
 	    …
 	  [/span]

@@ -166,8 +166,11 @@ class BoostrapShortcodes {
     * 
     *-------------------------------------------------------------------------------------*/
   function bs_row( $atts, $content = null ) {
+    extract(shortcode_atts(array(
+      "class" => ''
+    ), $atts));
     
-    return '<div class="row-fluid">' . do_shortcode( $content ) . '</div>';
+    return '<div class="row-fluid' . $class . '">' . do_shortcode( $content ) . '</div>';
 
   }
   
